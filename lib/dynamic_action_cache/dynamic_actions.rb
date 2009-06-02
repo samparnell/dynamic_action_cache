@@ -10,7 +10,8 @@ module ActionController
       end
 
       module InstanceMethods
-        # figure out the key the same way the caches action does
+        # figure out the key the same way the caches action does    
+        # Not yet supported
         def cache_for_action(key, &block)
           unless read_fragment(key)
             yield
